@@ -7,7 +7,7 @@
 			    	Notification.requestPermission().then(function(result) {
 						  if (result === 'granted') {
 						    
-						    registration.showNotification('Notification with ServiceWorker');
+						    registration.showNotification('Notification with ServiceWorker', {body: 'pruebas'});
 						    
 						  } else {
 						  	console.log(result);

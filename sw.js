@@ -4,7 +4,7 @@ self.addEventListener('install', function(event) {
     icon: 'images/icon.png',
     badge: 'images/badge.png'
   };
-	event.waitUntil(self.registration.showNotification('AL toque Perro', options));
+	
 });
 
 self.addEventListener('activate', function(event) {

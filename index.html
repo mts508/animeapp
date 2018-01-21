@@ -6,9 +6,11 @@
 			    navigator.serviceWorker.register('sw.js').then(function(registration) {
 			    	Notification.requestPermission().then(function() {
 						  if (result === 'granted') {
-						    navigator.serviceWorker.ready.then(function(registration) {
-						      registration.showNotification('Notification with ServiceWorker');
-						    });
+						    
+						    registration.showNotification('Notification with ServiceWorker');
+						    
+						  } else {
+						  	console.log(result);
 						  }
 						});
 			      //registration.showNotification("howdy");

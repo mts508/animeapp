@@ -4,7 +4,7 @@
 			if ('serviceWorker' in navigator) {
 			  window.addEventListener('load', function() {
 			    navigator.serviceWorker.register('sw.js').then(function(registration) {
-			    	Notification.requestPermission(function(result) {
+			    	Notification.requestPermission().then(function() {
 						  if (result === 'granted') {
 						    navigator.serviceWorker.ready.then(function(registration) {
 						      registration.showNotification('Notification with ServiceWorker');

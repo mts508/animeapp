@@ -4,7 +4,7 @@
 			if ('serviceWorker' in navigator) {
 			  window.addEventListener('load', function() {
 			    navigator.serviceWorker.register('sw.js').then(function(registration) {
-			      registration.showNotification("howdy");
+			      //registration.showNotification("howdy");
 			      console.log('ServiceWorker registration successful with scope: ', registration.scope);
 			    }).catch(function(err) {
 			      // registration failed :(
